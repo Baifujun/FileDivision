@@ -41,6 +41,8 @@ public class FileDivision {
 					if (counter == 4000000) {
 						counter = 0;
 						num++;
+                                                osw.close();
+						bw.close();
 						osw = new FileWriter(preName + num + sufName);
 						bw = new BufferedWriter(osw);
 					}
